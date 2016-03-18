@@ -19,9 +19,9 @@ var App = React.createClass({
 				{id:3, name:'bernie sanders', city:'burlington', gender:'m'}
 			],
 			vipMembers:[
-				{id:1, name:'rihanna', city:'new york', gender:'f'},
-				{id:2, name:'leonardo dicaprio', city:'los angeles', gender:'m'},
-				{id:3, name:'justin bieber', city:'vancouver', gender:'m'}
+				{id:1, name:'rihanna', city:'new york', gender:'f', image:'rihanna.jpg'},
+				{id:2, name:'leonardo dicaprio', city:'los angeles', gender:'m', image:'dicaprio.jpg'},
+				{id:3, name:'justin bieber', city:'vancouver', gender:'m', image:'bieber.jpg'}
 			]
 		}
 	},
@@ -86,11 +86,11 @@ var App = React.createClass({
 
 				<div className="col-md-6">
 					<h2>Next Member</h2>
-					<input className="form-control" value={this.state.nextMember.name} onChange={this.nextMemberUpdated} type="text" name="name" id="name" placeholder="Name" /><br />
-					<input className="form-control" value={this.state.nextMember.city} onChange={this.nextMemberUpdated} type="text" name="city" id="city" placeholder="City" /><br />
-					<input className="form-control" value={this.state.nextMember.gender} onChange={this.nextMemberUpdated} type="text" name="gender" id="gender" placeholder="Gender" /><br />
-					<input className="form-control" value={this.state.nextMember.id} onChange={this.nextMemberUpdated} type="text" name="id" id="id" placeholder="ID Number" /><br />
-					<input className="form-control" value={this.state.nextMember.type} onChange={this.nextMemberUpdated} type="text" name="type" id="type" placeholder="Which list" /><br />
+					<input style={{background:'#f9f9f9'}} className="form-control" value={this.state.nextMember.name} onChange={this.nextMemberUpdated} type="text" name="name" id="name" placeholder="Name" /><br />
+					<input style={{background:'#f9f9f9'}} className="form-control" value={this.state.nextMember.city} onChange={this.nextMemberUpdated} type="text" name="city" id="city" placeholder="City" /><br />
+					<input style={{background:'#f9f9f9'}} className="form-control" value={this.state.nextMember.gender} onChange={this.nextMemberUpdated} type="text" name="gender" id="gender" placeholder="Gender" /><br />
+					<input style={{background:'#f9f9f9'}} className="form-control" value={this.state.nextMember.id} onChange={this.nextMemberUpdated} type="text" name="id" id="id" placeholder="ID Number" /><br />
+					<input style={{background:'#f9f9f9'}} className="form-control" value={this.state.nextMember.type} onChange={this.nextMemberUpdated} type="text" name="type" id="type" placeholder="Which list" /><br />
 					<br />
 					<button className="btn btn-success" onClick={this.addMember}>Add Member</button>
 				</div>
