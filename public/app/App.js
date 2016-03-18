@@ -11,7 +11,7 @@ var App = React.createClass({
 				name: '',
 				city: '',
 				gender: '',
-				type:'vip'
+				type:''
 			},
 			members: [
 				{id:1, name:'donald trump', city:'new york', gender:'m'},
@@ -46,7 +46,7 @@ var App = React.createClass({
 					name:'',
 					city:'',
 					gender:'',
-					type:'vip'
+					type:''
 				}
 			});
 		}
@@ -60,7 +60,7 @@ var App = React.createClass({
 					name:'',
 					city:'',
 					gender:'',
-					type:'vip'
+					type:''
 				}
 			});
 		}
