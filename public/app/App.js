@@ -77,21 +77,23 @@ var App = React.createClass({
 
 	render: function(){
 		return (
-			<div>
-				<Header />
-				<List type="VIP" roster={this.state.vipMembers} />
-				<List type="Election" roster={this.state.members} />
+			<div className="row">
+				<div className="col-md-6">
+					<Header />
+					<List type="VIP" roster={this.state.vipMembers} />
+					<List type="Election" roster={this.state.members} />
+				</div>
 
-				<hr />
-				<h2>Next Member</h2>
-				<input value={this.state.nextMember.name} onChange={this.nextMemberUpdated} type="text" name="name" id="name" placeholder="Name" /><br />
-				<input value={this.state.nextMember.city} onChange={this.nextMemberUpdated} type="text" name="city" id="city" placeholder="City" /><br />
-				<input value={this.state.nextMember.gender} onChange={this.nextMemberUpdated} type="text" name="gender" id="gender" placeholder="Gender" /><br />
-				<input value={this.state.nextMember.id} onChange={this.nextMemberUpdated} type="text" name="id" id="id" placeholder="ID Number" /><br />
-				<input value={this.state.nextMember.type} onChange={this.nextMemberUpdated} type="text" name="type" id="type" placeholder="Which list" /><br />
-				<br />
-				<button onClick={this.addMember}>Add Member</button>
-
+				<div className="col-md-6">
+					<h2>Next Member</h2>
+					<input className="form-control" value={this.state.nextMember.name} onChange={this.nextMemberUpdated} type="text" name="name" id="name" placeholder="Name" /><br />
+					<input className="form-control" value={this.state.nextMember.city} onChange={this.nextMemberUpdated} type="text" name="city" id="city" placeholder="City" /><br />
+					<input className="form-control" value={this.state.nextMember.gender} onChange={this.nextMemberUpdated} type="text" name="gender" id="gender" placeholder="Gender" /><br />
+					<input className="form-control" value={this.state.nextMember.id} onChange={this.nextMemberUpdated} type="text" name="id" id="id" placeholder="ID Number" /><br />
+					<input className="form-control" value={this.state.nextMember.type} onChange={this.nextMemberUpdated} type="text" name="type" id="type" placeholder="Which list" /><br />
+					<br />
+					<button className="btn btn-success" onClick={this.addMember}>Add Member</button>
+				</div>
 
 			</div>
 		);
