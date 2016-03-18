@@ -88,7 +88,7 @@ var App = React.createClass({
 				<input value={this.state.nextMember.city} onChange={this.nextMemberUpdated} type="text" name="city" id="city" placeholder="City" /><br />
 				<input value={this.state.nextMember.gender} onChange={this.nextMemberUpdated} type="text" name="gender" id="gender" placeholder="Gender" /><br />
 				<input value={this.state.nextMember.id} onChange={this.nextMemberUpdated} type="text" name="id" id="id" placeholder="ID Number" /><br />
-				<input value={this.state.nextMember.type} onChange={this.nextMemberUpdated} type="text" name="type" id="type" placeholder="Type" /><br />
+				<input value={this.state.nextMember.type} onChange={this.nextMemberUpdated} type="text" name="type" id="type" placeholder="Which list" /><br />
 				<br />
 				<button onClick={this.addMember}>Add Member</button>
 
